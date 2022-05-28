@@ -8,12 +8,12 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 /**
- * Clase para el manejo de la información de la tabla Usuarios
- *
+ * Class for the management of User (Entity)
+ * History 3390 CRUD de tipos de apoyo por auxiliatura
  * @author Andres Valenzuela
  * @since 1.0
- *
- */
+ **/
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -24,16 +24,16 @@ public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID", unique = true)
+    @Column(name = "ID", unique = true, insertable = false)
     private Long id;
 
-    @Column(name = "IDENTIFICACION")
+    @Column(name = "IDENTIFICACION", nullable = false)
     private Long identificacion;
 
     @Column(name = "TELEFONO")
     private Long telefono;
 
-    @Column(name = "NOMBRE")
+    @Column(name = "NOMBRE", nullable = false)
     private String nombre;
 
 }

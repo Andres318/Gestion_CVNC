@@ -6,6 +6,14 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
+/**
+ * Mapper of User
+ * History -technical test- users CRUD
+ * @author Andres Valenzuela
+ * @since 1.0
+ *
+ */
+
 @Mapper
 public interface UserMapper {
 
@@ -19,7 +27,7 @@ public interface UserMapper {
      */
     /*@Mapping(target = "id", source = "id")
     @Mapping(target = "identificacion", source = "identificacion")
-    @Mapping(target = "telefono", source = "telefono")
+    @Mapping(target = "telefono", source = "telefono")     //Como los campos son homonimos, Mapstruct infiere estos mappings
     @Mapping(target = "nombre", source = "nombre")*/
     User toUser(UserDTO userDTO);
 
