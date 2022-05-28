@@ -11,7 +11,7 @@
     <groupId>com.andres</groupId>
     <artifactId>CRUD_Users</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>CRUD_Users</name>
+    <name>gestor-cvnc</name>
     <description>CRUD_Users</description>
     <properties>
         <java.version>11</java.version>
