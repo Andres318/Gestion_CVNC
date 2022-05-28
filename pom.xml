@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.andres</groupId>
-    <artifactId>CRUD_Users</artifactId>
+    <artifactId>gestor-cvnc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>gestor-cvnc</name>
     <description>CRUD_Users</description>
@@ -63,15 +63,11 @@
     </dependencies>
 
     <build>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>com.heroku.sdk</groupId>
-                <artifactId>heroku-maven-plugin</artifactId>
-                <version>3.0.3</version>
             </plugin>
         </plugins>
     </build>
