@@ -18,6 +18,11 @@ public class UserServiceImpl implements IUserService {
         return this.userRepository.findAll();
     }
 
+    @Override
+    public User getUser(Long id){
+        return this.userRepository.findById(id).orElse(null);
+    }
+
 
     @Autowired
     public void setUserRepository(IUserRepository userRepository) {

@@ -9,4 +9,6 @@ import java.util.List;
 public interface IUserService {
 
     List<User> getAll();
+
+    User getUser(Long id);
 }
